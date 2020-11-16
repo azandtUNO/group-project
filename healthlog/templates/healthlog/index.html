@@ -1,41 +1,44 @@
 {% load static %}
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Healthlog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+<head>
+    <title>Healthlog</title>
+    <!--link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="{% static 'css/index.css' %}"/>
-    </head>
-    
-    <body>
+        <link rel="stylesheet" href="{% static 'css/index.css' %}"/-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
         <h2>Health Log</h2>
-        <div id="wrapper">
-            <ul>
-                <li><a href="#ABOUT">Home</a></li>
-                <li><a href="#FOOD">News</a></li>
-                <li><a href="#EXERCISE">Contact</a></li>
-                <li><a href="#APPS">About</a></li>
-                <li><a href="#COMMUNITY">About</a></li>
-            </ul>
-            <div id="setTop">
-                <h1>Fitness starts with what you eat.</h1>
-                <p>Take control of your goals. Track calories, break down ingredients, and log activities with MyFitnessPal.</p>
-                <p>
-                    "Already have an account? "
-                    <a>Login</a>
-                </p>
-            </div>
-        
-            <h2>Search over 11 million foods in our database.</h2>
-            <p>What's in your food? Learn about calorie count, nuitrition information and serving size.</p>
-            <div>
-                <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
-                    <input type="text" placeholder="Search.." name="search2">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
+        <div class="row">
+            <a class="col s2" href="#ABOUT">Home</a>
+            <a class="col s2" href="#FOOD">News</a>
+            <a class="col s2" href="#EXERCISE">Contact</a>
+            <a class="col s2" href="#APPS">About</a>
         </div>
-    </body>
+        <h3>Fitness starts with what you eat.</h3>
+        <p>Take control of your goals. Track calories, break down ingredients, and log activities with MyFitnessPal.</p>
+        <p>
+            "Already have an account? "
+            <a>Login</a>
+        </p>
+        <h3>Search over 11 million foods in our database.</h3>
+        <p>What's in your food? Learn about calorie count, nuitrition information and serving size.</p>
+        <div>
+            <form class="search" action="/action_page.php" style="margin:auto;max-width:300px">
+                <div class="row">
+                    <input type="text" placeholder="Search..." name="search2">
+                    <button type="submit"><i class="fa fa-search">Search</i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
 </html>
